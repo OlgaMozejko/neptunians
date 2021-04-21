@@ -1,0 +1,143 @@
+.boddy {
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: english-grotesque, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.subhead{
+    margin-bottom: -10px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40px;
+    color: #011936;
+}
+
+.top_inner_section {
+        margin: 0 auto;
+        height: 640px;
+        background-image: url(../pic/bgonboard.jpg);
+    }
+
+.section_box{
+    margin-left: 50px;
+    margin-right: 60px;
+}
+    
+.top_inner_flexbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+.ex{
+    color: #e77728;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 30px;
+    float: right;
+    margin-right: -40px;
+}
+
+.pic{
+    height: 250px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.text{
+    text-align: center;
+}
+
+
+
+/*sliders*/
+
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  align-content: center;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 30% 30% 30% 30%;
+  user-select: none;
+    color: #011936;
+}
+
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: #e77728;
+  color: white;
+}
+
+.slide-container .prev {
+    text-decoration: none;
+  left: 2px;
+  z-index: 999;
+}
+
+.slide-container .next {
+    text-decoration: none;
+  right: 2px;
+z-index: 999;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+    position: absolute;
+    bottom: 0;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #e77728;
+}
+
+.dots-container .dot.active {
+  background-color: #011936;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  margin: auto;
+  position: relative;
+}
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+
+<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="log in into the neptunians app" />
+    <title>Log-In</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hdo1kbz.css">
+  </head>
+  <body class="boddy">
+      <header class="head">
+          
+      <img src="pic/logo.png" class="logo" alt="picture of the logo">
+      <a href="login.html" class="log_out"><p class="text_log">Log<br>out</p></a>
+      </header>
+      <main>
+          <img src="pic/planet_hi.png" class="planet" alt="neptunian saying hi">
+<div class='container'>
+            <div class='overlay'></div>
+            <div>
+                <div class='welcome'>Log In</div>
+                <div class='input-fields'>
+                    <p class='text'>User</p>
+                    <input type='text' placeholder='...' id="user" class='input-line'><br>
+                    <p class='text'>Pin</p>
+                    <input type='password' placeholder='...' id="pass" class='input-line'>
+
+                </div>
+                <div><button id="btn" class='ghost-round'>GO</button></div>
+            </div>
+
+    </div>
+          <br><br><br><br><br><br><br><br><br><br>
+
+      </main>
+<footer class="foot">
+    <div class="nav">
+            <a href="login.html" class="icon"><img alt="home icon" src="pic/iconhome.png" class="iconsize"></a>
+            <a href="login.html" class="icon"><img alt="booking icon" src="pic/iconbook.png" class="iconsize"></a>
+            <a href="login.html" class="icon"><img alt="news icon" src="pic/iconnews.png" class="iconsize"></a>
+            <a href="login.html" class="icon"><img alt="rules icon" src="pic/iconrules.png" class="iconsize"></a>
+    </div>
+      </footer>
+      <script>
+        var users = [{
+                username: 'neptun',
+                password: '1234'
+            },
+        ];
+
+        var button = document.getElementById('btn');
+
+        button.onclick = function() {
+            var username = document.getElementById('user').value;
+            var password = document.getElementById('pass').value;
+
+            for (var i = 0; i < users.length; i++) {
+                if (username == users[i].username && password == users[i].password) {
+                    window.location.href = 'front.html';
+                    break;
+                } else {
+                    alert('Something is not correct, give it another try!');
+                }
+            }
+        }
+    </script>
+  </body>
+</html>
+

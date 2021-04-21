@@ -1,0 +1,277 @@
+.boddy {
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: english-grotesque, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/*header*/
+
+.head{
+    overflow: hidden;
+    background-color: #011936;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+}
+
+.log_out{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    background-color: #e77728;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text_log{
+    margin: -5px;
+}
+
+.logo{
+    width: 35%;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+
+/*footer-nav*/
+
+.foot{
+    background-color: #011936;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 350px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.icon{
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.iconsize{
+        height: 30px;
+}
+
+/*contact*/
+
+.phone{
+    position: fixed;
+    width: 350px;
+    top: 70%;
+    z-index: 90;
+}
+
+.contact{
+    background-color: #6391c9;
+    height: 60px;
+    width: 60px;
+    float: right;
+    border-radius: 30% 0 0 30%;
+}
+
+.phoneicon{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/*news*/
+
+.top_inner_section {
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 350px;
+        border-radius: 30px;
+    }
+
+.section_box{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+    
+.top_inner_flexbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+
+/*sliders*/
+
+.slide-container .prev{
+    margin-left: 120px;
+}
+
+.slide-container .next{
+    margin-right: 120px;
+}
+
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  align-content: center;
+  top: 100%;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 30% 30% 30% 30%;
+  user-select: none;
+    color: #011936;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  color: #e77728;
+}
+
+.slide-container .prev {
+    text-decoration: none;
+  left: 2px;
+  z-index: 999;
+}
+
+.slide-container .next {
+    text-decoration: none;
+  right: 2px;
+z-index: 999;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+    position: absolute;
+    bottom: 0;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+}
+
+.dots-container .dot.active {
+  background-color: white;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+.slide-container .slide {
+  display: none;
+  width: 95%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
+}
+
+/*temperature*/
+
+.weatherInfo {
+        display: flex;
+        background-color: #d9d9e6;
+        width: 35%;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 10px;
+        padding: 10px;
+        padding-bottom: 15px;
+        height: 40px;
+}
+
+.weathericon{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-right: 1px;
+    margin-left: 1px;
+    width: 50px;
+    height: 50px;
+}
+
+.wetext{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #6391c9;
+}
+
+/*inside-slides*/
+
+.news1{
+    background-image: url(../pic/corona_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.news2{
+    background-image: url(../pic/summer_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dat{
+    float: right;
+    font-size: 12px;
+    color: #011936;
+}
+
+.t1{
+    color: #011936;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+
+.t2{
+    color: #6391c9;
+}
+
+/*API-pretender*/
+
+
+.calbox{
+    width: 40%;
+    float: right;
+    margin-right: 10px;
+    margin-top: -67px;
+}

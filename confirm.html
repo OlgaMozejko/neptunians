@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+
+<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Confirm the booking" />
+    <title>Book it!</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hdo1kbz.css">
+  </head>
+  <body class="boddy">
+      <header class="head">
+          <img src="pic/logo.png" class="logo" alt="picture of the logo">
+      <a href="logout.html" class="log_out"><p class="text_log">Log<br>out</p></a>
+      </header>
+      <main>
+    <div class="phone"><a href="contact.html" class="contact"><img alt="contact icon" src="pic/iconphone.png" class="phoneicon"></a></div>
+          <h1 class="header">Book a time</h1>
+          <img src="pic/planet_confirm.png" alt="happy neptunian confirming the booking"
+               class="picture">
+          <h4 class="subhead2">19 / April</h4>
+          <p class="date">14:00 - 15:00</p>
+          <a href="laundry.html" class="butt">Back</a>
+          <button onclick="on()" class="butt2">Confirm</button>
+          
+          
+               <div id="overlay" class="overlay" onclick="off()">
+         <div class="box">
+  <div class="text">You have a booking</div>
+  <div class="text3">It's all set! You have a booking for Monday 19/04 for 14:00-15:00</div>
+  <img src="pic/planet_celebrate.png" alt="happy neptunian" class="pic_mess">
+         </div>
+</div>
+          <br><br><br><br><br><br><br><br><br><br>
+      </main>
+<footer class="foot">
+    <div class="nav">
+            <a href="front.html" class="icon"><img alt="home icon" src="pic/iconhome.png" class="iconsize"></a>
+            <a href="booking.html" class="icon"><img alt="booking icon" src="pic/iconbook.png" class="iconsize"></a>
+            <a href="news.html" class="icon"><img alt="news icon" src="pic/iconnews.png" class="iconsize"></a>
+            <a href="rules.html" class="icon"><img alt="rules icon" src="pic/iconrules.png" class="iconsize"></a>
+    </div>
+      </footer>
+    <script>
+       function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+} 
+      </script>
+  </body>
+</html>
+
